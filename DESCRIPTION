@@ -18,12 +18,13 @@ License: GPL-3
 Encoding: UTF-8
 Depends: R (> 3.6)
 Imports:
-  utils,
-  png,
-  graphics,
-  magrittr,
-  grImport (>= 0.9-1),
-  backports
+    utils,
+    png,
+    graphics,
+    magrittr,
+    grImport (>= 0.9-1),
+    backports,
+    rsvg
 LazyData: true
 RoxygenNote: 7.1.2
 Suggests: 
