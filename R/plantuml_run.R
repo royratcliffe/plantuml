@@ -1,8 +1,8 @@
 #' Run the plantuml binary
 #'
 #' The in the package installation included `plantuml` binary is executed using
-#' the provided java and plantuml commands.
-#' This is effectively a wrapper around `system2()` with some values set to run `plantuml`.
+#' the provided java and plantuml commands. This is effectively a wrapper around
+#' `system2()` with some values set to run `plantuml`.
 #' @param plantuml_jar path + filename to the plantuml jar file
 #' @param plantuml_opt options for plantuml. The default is `-help` to show all
 #'   options of plantuml
@@ -28,7 +28,7 @@
 #'   plantuml_run()
 #' }
 plantuml_run <- function(
-  plantuml_jar = file.path( getPlantumlOption("jar_path"), getPlantumlOption("jar_name")),
+  plantuml_jar = getPlantumlOption("jar_name"),
   plantuml_opt = "-help",
   java_bin = getPlantumlOption("java_bin"),
   java_opt = getPlantumlOption("java_opt"),
@@ -64,10 +64,10 @@ plantuml_run <- function(
     command = java_bin,
     args = paste(java_opt, cmd, plantuml_opt),
     stdout = stdout,
-    stderr =stderr,
+    stderr = stderr,
     stdin = stdin,
     input = input
   )
 
-  return(result)
+  return(stdout)
 }

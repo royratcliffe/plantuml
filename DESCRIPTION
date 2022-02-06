@@ -2,7 +2,7 @@ Package: plantuml
 Type: Package
 Title: Create UML Graphs using PlantUML Syntax
 Version: 0.4
-Date: 2002-07-03
+Date: 2022-01-25
 Authors@R: 
     c(person(given = "Rainer M.",
              family = "Krug",
@@ -18,14 +18,15 @@ License: GPL-3
 Encoding: UTF-8
 Depends: R (> 3.6)
 Imports:
-  utils,
-  png,
-  graphics,
-  magrittr,
-  grImport (>= 0.9-1),
-  backports
+    utils,
+    png,
+    graphics,
+    magrittr,
+    grImport (>= 0.9-1),
+    backports,
+    rsvg
 LazyData: true
-RoxygenNote: 7.1.1.9000
+RoxygenNote: 7.1.2
 Suggests: 
     knitr,
     rmarkdown,

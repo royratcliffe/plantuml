@@ -5,8 +5,7 @@
 \title{Run the plantuml binary}
 \usage{
 plantuml_run(
-  plantuml_jar = file.path(getPlantumlOption("jar_path"),
-    getPlantumlOption("jar_name")),
+  plantuml_jar = getPlantumlOption("jar_name"),
   plantuml_opt = "-help",
   java_bin = getPlantumlOption("java_bin"),
   java_opt = getPlantumlOption("java_opt"),
@@ -42,8 +41,8 @@ the result from the call to \code{system2()}
 }
 \description{
 The in the package installation included \code{plantuml} binary is executed using
-the provided java and plantuml commands.
-This is effectively a wrapper around \code{system2()} with some values set to run \code{plantuml}.
+the provided java and plantuml commands. This is effectively a wrapper around
+\code{system2()} with some values set to run \code{plantuml}.
 }
 \examples{
 \dontrun{
